@@ -120,10 +120,12 @@ li a {
 .section-content button {
     width: 560px;
     height: 100px;
+    border-left: none;
+    border-top: none;
     border-right: 2px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    border-radius: 6;
-    background: linear-gradient(274deg, rgba(20, 57, 82, 0.59) 0%, #143942 97.93%);
+    border-radius: 6px;
+    background: linear-gradient(274deg, rgba(11, 33, 48, 0.8) 0%, #0e2e36 97.93%);
     color: var(--primary-color);
     text-align: center;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
@@ -135,8 +137,24 @@ li a {
     line-height: normal;
     letter-spacing: 1px;
     margin-top: 30px;
+    transition: all 500ms;
+    cursor: pointer;
 }
 
+.section-content button:hover {
+    color: var(--accent-color);
+    border-right: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    text-shadow: 2px 2px 3px rgba(12, 25, 29, 0.4);
+    transition: all 250ms;
+}
+
+.section-content button:active {
+    border-right: 0.1px solid rgba(21, 59, 80, 0.8);
+    border-bottom: 0.1px solid rgba(21, 59, 80, 0.8);
+    background: linear-gradient(274deg, rgba(21, 59, 80, 0.8) 0%, rgba(21, 59, 80, 0.9) 97.73%);
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.95) inset;
+}
 
 
 /* Media Queries */
